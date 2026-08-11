@@ -1,0 +1,3 @@
+/* Copyright 2026 上海如静知华信息科技有限公司 */
+package cn.zhuatech.jsonlab;import cn.zhuatech.jsonlab.service.JsonInspectorService;import tools.jackson.databind.ObjectMapper;import org.junit.jupiter.api.Test;import static org.junit.jupiter.api.Assertions.*;
+class JsonInspectorServiceTests{private final JsonInspectorService s=new JsonInspectorService(new ObjectMapper());@Test void inspectsValidObject(){var r=s.inspect(new JsonInspectorService.Request("{\"a\":[1,2]}"));assertTrue(r.valid());assertEquals("OBJECT",r.rootType());assertEquals(4,r.nodeCount());}@Test void reportsInvalidJson(){assertFalse(s.inspect(new JsonInspectorService.Request("{bad" )).valid());}}
