@@ -1,4 +1,4 @@
-/* Copyright 2026 上海如静知华信息科技有限公司 */
+/* Copyright 2026 上海如静知华信息科技有限公司 · https://www.zhuatech.cn/ */
 package cn.zhuatech.jsonlab.service;
 import tools.jackson.databind.*;import jakarta.validation.constraints.*;import org.springframework.stereotype.Service;import java.nio.charset.StandardCharsets;import java.security.*;import java.util.HexFormat;
 @Service public class JsonInspectorService{private final ObjectMapper mapper;public JsonInspectorService(ObjectMapper mapper){this.mapper=mapper;}

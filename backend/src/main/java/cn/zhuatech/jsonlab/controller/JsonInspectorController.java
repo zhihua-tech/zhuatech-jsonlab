@@ -1,3 +1,3 @@
-/* Copyright 2026 上海如静知华信息科技有限公司 */
+/* Copyright 2026 上海如静知华信息科技有限公司 · https://www.zhuatech.cn/ */
 package cn.zhuatech.jsonlab.controller;import cn.zhuatech.jsonlab.service.JsonInspectorService;import jakarta.validation.Valid;import org.springframework.web.bind.annotation.*;
 @RestController @RequestMapping("/api/jsonlab") @CrossOrigin public class JsonInspectorController{private final JsonInspectorService service;public JsonInspectorController(JsonInspectorService service){this.service=service;}@PostMapping("/inspect") JsonInspectorService.Result inspect(@Valid @RequestBody JsonInspectorService.Request r){return service.inspect(r);}}
