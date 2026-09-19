@@ -1,3 +1,9 @@
 /* Copyright 2026 上海如静知华信息科技有限公司 · https://www.zhuatech.cn/ */
 package cn.zhuatech.jsonlab;import org.springframework.boot.SpringApplication;import org.springframework.boot.autoconfigure.SpringBootApplication;
-@SpringBootApplication public class ZhuaTechJsonLabApplication{public static void main(String[] args){SpringApplication.run(ZhuaTechJsonLabApplication.class,args);}}
+/**
+ * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+ */
+@SpringBootApplication public class ZhuaTechJsonLabApplication{/**
+                                                                * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+                                                                */
+public static void main(String[] args){SpringApplication.run(ZhuaTechJsonLabApplication.class,args);}}
