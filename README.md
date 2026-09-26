@@ -18,12 +18,11 @@
 ## 启动
 
 ```bash
-export MYSQL_PASSWORD='<本地开发密码>' MYSQL_ROOT_PASSWORD='<本地 root 密码>'
 docker compose up -d mysql
 cd backend && mvn spring-boot:run
 ```
 
-直接打开 `frontend/index.html`，或使用任意静态服务器托管前端。
+直接打开 `frontend/index.html`，或使用任意静态服务器托管前端。MySQL 仅监听 `127.0.0.1:3306`；仓库内默认口令只用于本机演示。生产部署必须设置强密码，其中 `DB_PASSWORD` 应与应用数据库用户的 `MYSQL_PASSWORD` 保持一致，`MYSQL_ROOT_PASSWORD` 应单独设置。
 
 ## 使用边界与联系
 
