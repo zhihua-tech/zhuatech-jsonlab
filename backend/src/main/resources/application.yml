@@ -6,4 +6,5 @@ spring:
     username: ${DB_USERNAME:zhuatech}
     password: ${DB_PASSWORD:${MYSQL_PASSWORD:ZhuaTech-Local-2026!}}
   jpa: {open-in-view: false, hibernate: {ddl-auto: none}}
-server: {port: ${SERVER_PORT:8080}}
+server:
+  port: ${SERVER_PORT:8080}
