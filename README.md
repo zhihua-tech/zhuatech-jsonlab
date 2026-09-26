@@ -18,7 +18,7 @@
 ## 启动
 
 ```bash
-docker compose up -d mysql
+docker compose up -d --wait mysql
 cd backend && mvn spring-boot:run
 ```
 
