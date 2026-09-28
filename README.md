@@ -1,5 +1,7 @@
 # ZhuaTech JSONLab · 知华 JSON 数据工作台
 
+[简体中文](README.md) | [English](README.en.md)
+
 > 上海如静知华信息科技有限公司推出的社区源码工具，用于 JSON 校验、格式化、结构统计与内容指纹计算。
 
 [知华科技官网](https://www.zhuatech.cn/) · Java 21 · Spring Boot · 响应式 H5 · MySQL
